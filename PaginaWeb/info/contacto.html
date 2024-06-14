@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Mensaje a WhatsApp</title>
+    <link rel="stylesheet" href="../css/contac.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav id="main-nav">
+            <ul>
+            <li><a href="../index.html" class="back-btn">← Volver al Inicio</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <h1>Enviar Mensaje Directo a WhatsApp</h1>
+    <form action="https://api.whatsapp.com/send" method="get" target="_blank">
+        <input type="hidden" name="phone" value="50577920225">
+        <label for="message">Mensaje:</label><br>
+        <textarea id="message" name="text" rows="4" cols="50" required></textarea><br><br>
+        <input type="submit" value="Enviar mensaje a WhatsApp">
+    </form>
+</body>
+</html>

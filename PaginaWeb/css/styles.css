@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #a6b985; /* Color de fondo */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #023027;
+    color: #fff; /* Color de la letra */
+    padding: 10px 0;
+    position: fixed; /* Fija el  en la parte superior */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra ligera para destacar */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.section {
+    padding-top: 100px; /* Ajusta este valor según la altura de tu  */
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* Cambiamos a inline-block para que se alineen horizontalmente */
+    position: relative; /* Necesario para el posicionamiento del dropdown */
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff; /* Color de las letras del menú */
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+nav ul li a:hover {
+    background-color: #648a64; /* Color de fondo más claro al pasar el cursor por los botones */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Aparece debajo del enlace padre */
+    left: 0;
+    background-color: #46685b; /* Nuevo color de fondo para el menú desplegable */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style-type: none; /* Quitamos los estilos de lista por defecto */
+    padding: 0; /* Quitamos el padding para alinear correctamente */
+    width: 200px; /* Ancho del dropdown */
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    margin-top: 80px; /* Asegura que el contenido principal no se superponga con el  fijo */
+    padding: 20px 0;
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 0; /* Ajusta el margen superior e inferior */
+}
+
+.image-container img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+#inicio {
+    background-image: url('../img/procesver.webp'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    color: #fff; /* Color del texto sobre la imagen (blanco en este caso) */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 100px 0; /* Ajusta el espaciado interno de la sección */
+}
+
+#inicio .container {
+    position: relative; /* Necesario para mantener el contenido dentro de la sección */
+    z-index: 1; /* Asegura que el contenido esté sobre la imagen de fondo */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar legibilidad */
+    padding: 20px; /* Ajusta el espaciado interno del contenido */
+}
+
+#inicio h2 {
+    font-size: 2.5em; /* Tamaño grande para el título */
+}
+
+#inicio p {
+    font-size: 1.2em; /* Tamaño del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+#introduccion {
+    color: #fff; /* Color del texto sobre la imagen (blanco en este caso) */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 100px 0; /* Ajusta el espaciado interno de la sección */
+}
+
+#introduccion .container {
+    position: relative; /* Necesario para mantener el contenido dentro de la sección */
+    z-index: 1; /* Asegura que el contenido esté sobre la imagen de fondo */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar legibilidad */
+    padding: 20px; /* Ajusta el espaciado interno del contenido */
+}
+
+#introduccion h2 {
+    font-size: 2.5em; /* Tamaño grande para el título */
+}
+
+#introduccion p {
+    font-size: 1.2em; /* Tamaño del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+footer {
+    background-color: #023027; /* Color de fondo del footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#componentes, #tipos {
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    color: #fff; /* Color del texto sobre la imagen (blanco en este caso) */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 100px 0; /* Ajusta el espaciado interno de la sección */
+}
+
+#componentes .container, #tipos .container {
+    position: relative; /* Necesario para mantener el contenido dentro de la sección */
+    z-index: 1; /* Asegura que el contenido esté sobre la imagen de fondo */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar legibilidad */
+    padding: 20px; /* Ajusta el espaciado interno del contenido */
+}
+
+#componentes h2, #tipos h2 {
+    font-size: 2.5em; /* Tamaño grande para el título */
+}
+
+#componentes p, #tipos p {
+    font-size: 1.2em; /* Tamaño del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+

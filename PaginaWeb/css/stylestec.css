@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #a6b985; /* Color de fondo */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #023027;
+    color: #fff; /* Color de la letra */
+    padding: 10px 0;
+    position: fixed; /* Fija el  en la parte superior */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra ligera para destacar */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#iniciotec {
+    background-image: url('../img/risccisc.webp'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    color: #000000; /* Color del texto sobre la imagen (blanco en este caso) */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 100px 0; /* Ajusta el espaciado interno de la sección */
+}
+
+#iniciohis {
+    background-image: url('../img/inicio.png'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    color: #000000; /* Color del texto sobre la imagen (blanco en este caso) */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 100px 0; /* Ajusta el espaciado interno de la sección */
+}
+
+#iniciotec .container, #iniciohis .container {
+    position: relative; /* Necesario para mantener el contenido dentro de la sección */
+    z-index: 1; /* Asegura que el contenido esté sobre la imagen de fondo */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente para mejorar legibilidad */
+    padding: 20px; /* Ajusta el espaciado interno del contenido */
+}
+
+#iniciotec h2, #iniciohis h2 {
+    font-size: 2.5em; /* Tamaño grande para el título */
+}
+
+#iniciotec p, #iniciohis p {
+    font-size: 1.2em; /* Tamaño del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+
+.section {
+    padding-top: 100px; /* Ajusta este valor según la altura de tu  */
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* Cambiamos a inline-block para que se alineen horizontalmente */
+    position: relative; /* Necesario para el posicionamiento del dropdown */
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff; /* Color de las letras del menú */
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+nav ul li a:hover {
+    background-color: #648a64; /* Color de fondo más claro al pasar el cursor por los botones */
+}
+
+
+main {
+    margin-top: 80px; /* Asegura que el contenido principal no se superponga con el  fijo */
+    padding: 20px 0;
+}
+
+
+#tecnologia1 {
+    color: #fff; /* Color del texto sobre la imagen (blanco en este caso) */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 100px 0; /* Ajusta el espaciado interno de la sección */
+}
+
+#tecnologia1 .container {
+    position: relative; /* Necesario para mantener el contenido dentro de la sección */
+    z-index: 1; /* Asegura que el contenido esté sobre la imagen de fondo */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar legibilidad */
+    padding: 20px; /* Ajusta el espaciado interno del contenido */
+}
+
+#tecnologia1 h2 {
+    font-size: 2.5em; /* Tamaño grande para el título */
+}
+
+#tecnologia1 p {
+    font-size: 1.2em; /* Tamaño del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+
+#tecnologia2 {
+    color: #fff; /* Color del texto sobre la imagen (blanco en este caso) */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 100px 0; /* Ajusta el espaciado interno de la sección */
+}
+
+#tecnologia2 .container {
+    position: relative; /* Necesario para mantener el contenido dentro de la sección */
+    z-index: 1; /* Asegura que el contenido esté sobre la imagen de fondo */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar legibilidad */
+    padding: 20px; /* Ajusta el espaciado interno del contenido */
+}
+
+#tecnologia2 h2 {
+    font-size: 2.5em; /* Tamaño grande para el título */
+}
+
+#tecnologia2 p {
+    font-size: 1.2em; /* Tamaño del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+footer {
+    background-color: #023027; /* Color de fondo del footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+#tecnologia3 {
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    color: #fff; /* Color del texto sobre la imagen (blanco en este caso) */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 100px 0; /* Ajusta el espaciado interno de la sección */
+}
+
+#tecnologia3 .container{
+    position: relative; /* Necesario para mantener el contenido dentro de la sección */
+    z-index: 1; /* Asegura que el contenido esté sobre la imagen de fondo */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar legibilidad */
+    padding: 20px; /* Ajusta el espaciado interno del contenido */
+}
+
+#tecnologia3 h2 {
+    font-size: 2.5em; /* Tamaño grande para el título */
+}
+
+#tecnologia3 p{
+    font-size: 1.2em; /* Tamaño del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+}

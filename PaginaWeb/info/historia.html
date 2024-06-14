@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de arquitecturas de Arquitectura de Máquinas</title>
+    <link rel="stylesheet" href="../css/stylestec.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav id="main-nav">
+            <ul>
+            <li><a href="../index.html" class="back-btn">← Volver al Inicio</a></li>
+            <li><a href="#iniciohis">Inicio</a></li>
+            <li><a href="#tecnologia1">Origenes</a></li>
+            <li><a href="#tecnologia2">Computadores electronicos</a></li>
+            <li><a href="#tecnologia3">Tendencias</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="iniciohis" class="section">
+            <div class="container">
+                <h2>Bienvenido la historia de la arquitectura de maquinas</h2>
+                <p>En esta sección, encontrarás la historia de la arquitectura de maquinas.</p>
+                <p><strong>¡Explora y descubre todo lo que necesitas saber!</strong></p>
+            </div>
+        </section>
+
+        <section id="tecnologia1" class="section">
+            <div class="container">
+                <h2>Orígenes Históricos</h2>
+                <p>La historia de la arquitectura de máquinas tiene sus raíces en los primeros dispositivos mecánicos diseñados para realizar cálculos. Desde el ábaco en la antigüedad hasta las máquinas calculadoras mecánicas del siglo XIX, los humanos han buscado desarrollar máquinas que automatizaran procesos matemáticos y lógicos.</p>
+                <p>El concepto moderno de arquitectura de máquinas comenzó a cristalizarse en el siglo XX con el advenimiento de los computadores electrónicos programables. Uno de los hitos más importantes fue la creación de la máquina de Turing por Alan Turing, que demostró teóricamente la posibilidad de realizar cualquier cálculo computable mediante un algoritmo.</p>
+                <p>En paralelo, John von Neumann desarrolló la arquitectura que lleva su nombre, que introdujo el concepto de almacenamiento de programas en memoria y la ejecución secuencial de instrucciones. Esta arquitectura se convirtió en el modelo dominante para la construcción de computadoras durante décadas y sentó las bases para el diseño de sistemas informáticos modernos.</p>
+                <div class="video-container">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/o3Be2zAF92c" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        
+        <section id="tecnologia2" class="section">
+            <div class="container">
+                <h2>Era de los Computadores Electrónicos</h2>
+                <p>El avance significativo en la arquitectura de máquinas llegó en el siglo XX con la invención de los primeros computadores electrónicos programables. Pioneros como Alan Turing y John von Neumann sentaron las bases teóricas y prácticas para la arquitectura de máquinas moderna. La introducción del concepto de almacenamiento de programas en memoria y la ejecución secuencial de instrucciones (arquitectura de von Neumann) marcó un hito crucial en el desarrollo de la computación.</p>
+                <p>El desarrollo de los primeros computadores comerciales y científicos en las décadas de 1950 y 1960 expandió enormemente las capacidades de procesamiento y almacenamiento de datos. Surgieron compañías como IBM, DEC, y otras, que innovaron en el diseño de procesadores y sistemas informáticos. Estos computadores fueron utilizados inicialmente para aplicaciones científicas, militares y empresariales, estableciendo las bases para la revolución digital.</p>
+                <p>La evolución de la arquitectura de máquinas durante el siglo XX incluyó avances significativos como la miniaturización de componentes electrónicos, la integración de circuitos en un solo chip (microprocesadores), y la adopción generalizada de sistemas operativos y lenguajes de programación. Estos avances sentaron las bases para la democratización de la tecnología informática y el surgimiento de la era de la información.</p>
+                <div class="video-container">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/lsAeTXNQyIA" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        
+        <section id="tecnologia3" class="section">
+            <div class="container">
+                <h2>Tendencias Recientes</h2>
+                <p>En la era contemporánea, la arquitectura de máquinas ha evolucionado hacia sistemas altamente paralelos, procesadores multi-núcleo, y arquitecturas especializadas como GPU (Unidades de Procesamiento Gráfico) y FPGAs (Arreglos de Compuertas Programables en Campo). Estas tecnologías permiten manejar grandes volúmenes de datos y ejecutar operaciones complejas en tiempo real, impulsando avances significativos en inteligencia artificial, computación en la nube, y computación de alto rendimiento.</p>
+                <p>El diseño de procesadores RISC (Reduced Instruction Set Computer) ha ganado popularidad debido a su eficiencia energética y capacidad para ejecutar instrucciones de manera más rápida y eficiente que los diseños tradicionales CISC (Complex Instruction Set Computer). Esta tendencia ha llevado a una mayor diversificación en la arquitectura de máquinas, con enfoques personalizados para aplicaciones específicas como dispositivos móviles, servidores de datos, y sistemas embebidos.</p>
+                <p>Además, la búsqueda de la computación cuántica y la computación neuromórfica representa el próximo horizonte en la arquitectura de máquinas, prometiendo revolucionar la forma en que procesamos y almacenamos información a nivel fundamental. Estas tecnologías emergentes están explorando nuevos paradigmas computacionales que podrían resolver problemas actualmente intratables para los sistemas clásicos.</p>
+               
+            </div>
+        </section>
+        
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tu Nombre</p>
+        </div>
+    </footer>
+
+</body>
+
+<!-- Script para desplazamiento suave -->
+<script>
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            // Prevenir el comportamiento por defecto del enlace
+            e.preventDefault();
+            
+            // Obtener el destino del enlace (la sección o el elemento con el id correspondiente)
+            const targetId = this.getAttribute('href').substring(1); // Elimina el #
+            const target = document.getElementById(targetId);
+            
+            // Si el objetivo existe, desplázate a él
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop - 100, // Ajusta este valor según la altura de tu header
+                    behavior: 'smooth'
+                });
+            } else {
+                console.warn(`Elemento con id '${targetId}' no encontrado.`);
+            }
+        });
+    });
+</script>
+
+
+</html>
